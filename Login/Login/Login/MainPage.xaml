@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="Login.MainPage">
+
+    <StackLayout Padding="0">
+        <ScrollView>
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                <Frame BackgroundColor="LightPink" HeightRequest="200" HorizontalOptions="FillAndExpand"></Frame>
+            </StackLayout>
+
+            <StackLayout Margin="15,15,15,15">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="550" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="SIGN IN" TextColor="Black" FontSize="Medium" FontAttributes="Bold"></Label>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,25,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" HorizontalOptions="Start" Padding="0" Margin="7">
+                                        <Image Source="https://www.logolynx.com/images/logolynx/90/90ae65b2d63dcc5776e4b8da976cc604.jpeg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="User Name" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" x:Name="txtUserName"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,5,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" HorizontalOptions="Start" Padding="0" Margin="7">
+                                        <Image Source="http://www.lockitsolutions.com/blog/wp-content/uploads/2015/05/lockitLogo.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="Pass Word" IsPassword="True" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" x:Name="txtPassword"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <input:CheckBox Type="Check"/>
+                            <Label Text="Remember me" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                            <Label Text="Forgot Password" HorizontalTextAlignment="End" VerticalTextAlignment="Center" TextColor="HotPink" HorizontalOptions="EndAndExpand" FontAttributes="Bold"></Label>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,5,0,0" Orientation="Horizontal">
+
+
+                            <Frame WidthRequest="150" HeightRequest="45" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="StartAndExpand" Padding="0" >
+                                    <Entry Placeholder="Captcha" MaxLength="4" Keyboard="Numeric" TextColor="HotPink" x:Name="txtCaptcha" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Entry>
+                            </Frame>
+                            
+                            <Image x:Name="imagedd" WidthRequest="120" HeightRequest="30" />
+                        </StackLayout>
+                        
+                        <Button Text="SIGN IN" BackgroundColor="Purple" TextColor="White" FontAttributes="Bold" Margin="0,10,0,0" CornerRadius="30" x:Name="btnLogin" Clicked="btnLogin_Clicked"></Button>
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Label Text="Still not connected?" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                            <Label Text="Sign up" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="HotPink" FontAttributes="Bold">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="showFormSignUp" />
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+
+                        <StackLayout>
+                            <Grid>
+                                <BoxView BackgroundColor="DarkGray" HeightRequest="1" WidthRequest="130" Margin="50" HorizontalOptions="CenterAndExpand"></BoxView>
+                                <Frame BackgroundColor="White" WidthRequest="35" HeightRequest="35" Padding="0" Margin="0" VerticalOptions="Center" CornerRadius="30" HasShadow="False" BorderColor="DarkGray" HorizontalOptions="CenterAndExpand">
+                                    <Label Text="OR" TextColor="DarkGray" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                                </Frame>
+                            </Grid>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                <Frame BackgroundColor="White" WidthRequest="50" HeightRequest="50" Padding="0" Margin="0" VerticalOptions="Center" CornerRadius="30" HasShadow="False">
+                                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                                <Frame BackgroundColor="blue" WidthRequest="50" HeightRequest="50" Padding="0" Margin="0" VerticalOptions="Center" CornerRadius="30" HasShadow="False" BorderColor="White">
+                                    <Image Source="https://www.danoneinstitute.org/wp-content/uploads/2020/06/logo-rond-twitter.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+
+                </Frame>
+            </StackLayout>
+        </Grid>
+
+
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.frm_SignUp">
+    
+    <StackLayout Padding="0">
+        <ScrollView>
+        <Grid>
+            <StackLayout Padding="0" Margin="0">
+                <Frame BackgroundColor="LightPink" HeightRequest="200" HorizontalOptions="FillAndExpand"></Frame>
+            </StackLayout>
+
+            <StackLayout Margin="15,15,15,15">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="500" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <StackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="SIGN UP" TextColor="Black" FontSize="Medium" FontAttributes="Bold"></Label>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,15,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" HorizontalOptions="Start" Padding="0" Margin="7">
+                                        <Image Source="https://www.logolynx.com/images/logolynx/90/90ae65b2d63dcc5776e4b8da976cc604.jpeg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="User Name" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" x:Name="txtUserName"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,15,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" HorizontalOptions="Start" Padding="0" Margin="7">
+                                        <Image Source="http://www.lockitsolutions.com/blog/wp-content/uploads/2015/05/lockitLogo.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="Pass Word" IsPassword="True" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" x:Name="txtPassword"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,15,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" HorizontalOptions="Start" Padding="0" Margin="7">
+                                            <Image Source="https://cms.vietnamreport.net//source/CEO/512.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="Full Name" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" x:Name="txtFullName"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Margin="0,15,0,0">
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="35" WidthRequest="35" HorizontalOptions="Start" Padding="0" Margin="7">
+                                        <Image Source="https://library.kissclipart.com/20180901/yuw/kissclipart-telephone-number-icon-clipart-telephone-number-mob-9ee224dcbaea9ffc.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+                                    <Entry Placeholder="Number Phone: +84" Keyboard="Numeric" MaxLength="9" TextColor="HotPink" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" x:Name="txtNumberPhone"></Entry>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        
+                        <StackLayout Margin="0,15,0,0" Orientation="Horizontal">
+                            <Frame WidthRequest="150" HeightRequest="45" BorderColor="DarkGray" CornerRadius="50" HorizontalOptions="StartAndExpand" Padding="0" >
+                                    <Entry Placeholder="Captcha" Keyboard="Numeric" MaxLength="4" TextColor="HotPink" x:Name="txtCaptcha" WidthRequest="100" HorizontalOptions="CenterAndExpand"></Entry>
+                            </Frame>
+                            <Image x:Name="imagecc" WidthRequest="120" HeightRequest="30" />
+                        </StackLayout>
+                        
+                        <Button Text="SIGN UP" BackgroundColor="Purple" TextColor="White" FontAttributes="Bold" CornerRadius="30" Margin="0,25,0,0" x:Name="btnSignUp" Clicked="btnSignUp_Clicked"></Button>
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+        </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
