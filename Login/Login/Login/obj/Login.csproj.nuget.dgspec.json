@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login\\Login.csproj": {}
+    "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login\\Login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login\\Login.csproj": {
+    "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login\\Login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login\\Login.csproj",
+        "projectUniqueName": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login\\Login.csproj",
         "projectName": "Login",
-        "projectPath": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login\\Login.csproj",
+        "projectPath": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login\\Login.csproj",
         "packagesPath": "C:\\Users\\Bang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login\\obj\\",
+        "outputPath": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

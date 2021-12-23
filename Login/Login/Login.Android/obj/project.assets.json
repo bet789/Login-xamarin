@@ -2228,11 +2228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login.Android\\Login.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login.Android\\Login.Android.csproj",
       "projectName": "Login.Android",
-      "projectPath": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login.Android\\Login.Android.csproj",
+      "projectPath": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login.Android\\Login.Android.csproj",
       "packagesPath": "C:\\Users\\Bang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login.Android\\obj\\",
+      "outputPath": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2257,8 +2257,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login\\Login.csproj": {
-              "projectPath": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login\\Login.csproj"
+            "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login\\Login.csproj": {
+              "projectPath": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login\\Login.csproj"
             }
           }
         }

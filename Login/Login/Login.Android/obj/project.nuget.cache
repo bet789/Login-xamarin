@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3KUIfhCZ+H99judLQTND7hdPywt4UvnolzCL8P9CBBP3Hn54RxASuB5bYj/UqQfMgIMlJ9VdVsq6VH7eSkRexw==",
+  "dgSpecHash": "YTFmB/gqTFhOOSAWyz3tE3ziRMHmMuV4SBXa1DVn2kxqkU7Gpc2sa4alAqI3fa3Gqn/l+oNR/8neKacDSwtdkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bang\\Desktop\\Login\\Login\\Login.Android\\Login.Android.csproj",
+  "projectFilePath": "C:\\Users\\Bang\\Desktop\\Login-xamarin\\Login\\Login\\Login.Android\\Login.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bang\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Bang\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
