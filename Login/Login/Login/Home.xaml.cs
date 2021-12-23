@@ -15,8 +15,8 @@ namespace Login
         public Home(string para)
         {
             InitializeComponent();
-            //webmain.Source = "https://www.jun82.com/?token=" + para;
-            webmain.Source = "https://tinhte.vn/";
+            webmain.Source = para;
+            //webmain.Source = "https://tinhte.vn/";
         }
     }
 }

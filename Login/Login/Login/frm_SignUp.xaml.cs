@@ -90,3 +90,4 @@ namespace Login
         }
     }
 }
+// https://github.com/bet789/Login-xamarin/blob/captain/CheckTurnOn.json

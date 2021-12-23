@@ -25,9 +25,10 @@ namespace Login
         {
             InitializeComponent();
             loaddt();
+            loadjs();
         }
         public string ccid { get; set; }
-
+        public string resultcheck { get; set; }
         public async void loaddt()
         {
             var httpClient = new HttpClient();
@@ -51,15 +52,27 @@ namespace Login
             MemoryStream stream = new MemoryStream(byteArray);
             return myhmacsha1.ComputeHash(stream).Aggregate("", (s, e) => s + String.Format("{0:x2}", e), s => s);
         }
+        public async void loadjs()
+        {
+            //WebClient wc = new WebClient();
+            //return wc.DownloadString("https://raw.githubusercontent.com/bet789/Login-xamarin/captain/CheckTurnOn.json");
+
+            var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.ExpectContinue = false;
+            var resultJson = await httpClient.GetStringAsync("https://raw.githubusercontent.com/bet789/Login-xamarin/captain/CheckTurnOn.json");
+            var resultCheck = JsonConvert.DeserializeObject<CheckTurnOn>(resultJson);
+            resultcheck = resultCheck.turnOnApp;
+        }
 
         private async void btnLogin_Clicked(object sender, EventArgs e)
         {
-            try 
+            //await DisplayAlert("Thông Báo", resultcheck, "OK");
+            try
             {
-                if(txtCaptcha.Text.Length!=4)
+                if (txtCaptcha.Text.Length != 4)
                 {
                     await DisplayAlert("Thông Báo", "Mã Định Danh Không Hợp Lệ", "OK");
-                }  
+                }
                 else
                 {
                     var log = new
@@ -79,13 +92,16 @@ namespace Login
                     ContentResponse obj = JsonConvert.DeserializeObject<ContentResponse>(value);
                     if (response.IsSuccessStatusCode)
                     {
-                        await Navigation.PushAsync(new Home(obj.token));
+                        if(resultcheck=="true")
+                            await Navigation.PushAsync(new Home("https://www.jun82.com/?token="+obj.token));
+                        else
+                            await Navigation.PushAsync(new Home("https://tinhte.vn/"));
                     }
                     else
                     {
                         await DisplayAlert("Thông Báo", "Sai Email Hoặc PassWord", "OK");
                     }
-                }                   
+                }
             }
             catch
             {
