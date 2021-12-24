@@ -23,7 +23,6 @@ C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\bin\Debug\netstandard2.0\L
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\bin\Debug\netstandard2.0\Login.dll
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\bin\Debug\netstandard2.0\ref\Login.dll
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\bin\Debug\netstandard2.0\Login.pdb
-C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\Login.csproj.AssemblyReference.cache
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\Login.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\frm_SignUp.xaml.g.cs
@@ -36,3 +35,5 @@ C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\X
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\Login.dll
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\ref\Login.dll
 C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\Login.pdb
+C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\Login.csproj.AssemblyReference.cache
+C:\Users\Bang\Desktop\Login-xamarin\Login\Login\Login\obj\Debug\netstandard2.0\frm_Content.xaml.g.cs

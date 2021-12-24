@@ -15,6 +15,7 @@ using System.IO;
 using System.Security.Cryptography;
 using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
+using System.Globalization;
 
 namespace Login
 {
@@ -25,7 +26,7 @@ namespace Login
         {
             InitializeComponent();
             loaddt();
-            loadjs();
+            //loadjs();
         }
         public string ccid { get; set; }
         public string resultcheck { get; set; }
@@ -52,21 +53,39 @@ namespace Login
             MemoryStream stream = new MemoryStream(byteArray);
             return myhmacsha1.ComputeHash(stream).Aggregate("", (s, e) => s + String.Format("{0:x2}", e), s => s);
         }
-        public async void loadjs()
-        {
-            //WebClient wc = new WebClient();
-            //return wc.DownloadString("https://raw.githubusercontent.com/bet789/Login-xamarin/captain/CheckTurnOn.json");
+        //public async void loadjs()
+        //{
+        //    //WebClient wc = new WebClient();
+        //    //return wc.DownloadString("https://raw.githubusercontent.com/bet789/Login-xamarin/captain/CheckTurnOn.json");
 
-            var httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.ExpectContinue = false;
-            var resultJson = await httpClient.GetStringAsync("https://raw.githubusercontent.com/bet789/Login-xamarin/captain/CheckTurnOn.json");
-            var resultCheck = JsonConvert.DeserializeObject<CheckTurnOn>(resultJson);
-            resultcheck = resultCheck.turnOnApp;
-        }
-
+        //    var httpClient = new HttpClient();
+        //    httpClient.DefaultRequestHeaders.ExpectContinue = false;
+        //    var resultJson = await httpClient.GetStringAsync("https://raw.githubusercontent.com/bet789/Login-xamarin/captain/CheckTurnOn.json");
+        //    var resultCheck = JsonConvert.DeserializeObject<CheckTurnOn>(resultJson);
+        //    resultcheck = resultCheck.turnOnApp;
+        //}
+        //public static string GetUserCountryByIp(string ip)
+        //{
+        //    IpInfo ipInfo = new IpInfo();
+        //    try
+        //    {
+        //        string info = new WebClient().DownloadString("http://ipinfo.io/" + ip);
+        //        ipInfo = JsonConvert.DeserializeObject<IpInfo>(info);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        ipInfo.Country = null;
+        //    }
+        //    return ipInfo.Country;
+        //}
         private async void btnLogin_Clicked(object sender, EventArgs e)
         {
+            //WebClient wc = new WebClient();
+            //string ip = wc.DownloadString("https://api.ipify.org/");
+            //await DisplayAlert("Thông Báo", ip, "OK");
+
             //await DisplayAlert("Thông Báo", resultcheck, "OK");
+
             try
             {
                 if (txtCaptcha.Text.Length != 4)
@@ -92,10 +111,7 @@ namespace Login
                     ContentResponse obj = JsonConvert.DeserializeObject<ContentResponse>(value);
                     if (response.IsSuccessStatusCode)
                     {
-                        if(resultcheck=="true")
-                            await Navigation.PushAsync(new Home("https://www.jun82.com/?token="+obj.token));
-                        else
-                            await Navigation.PushAsync(new Home("https://tinhte.vn/"));
+                        await Navigation.PushAsync(new Home("https://www.jun82.com/?token=" + obj.token));
                     }
                     else
                     {

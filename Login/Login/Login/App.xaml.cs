@@ -8,7 +8,8 @@ namespace Login
     {
         public App()
         {
-            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new frm_Content());
         }
 
         protected override void OnStart()
